@@ -8,7 +8,7 @@ Technologies Used: HTML, CSS, JavaScript, jQuery
 
 #### User Stories
 
-// === Initial stages === //
+- Initial stages 
 
 At the start screen, user enters name and presses start.
 The game contains three main metrics, "health", "equipment durability", and "leveling bar".
@@ -19,7 +19,7 @@ When either of the three bar reaches zero (empty), the automatically end.
 All progress is lost when the game ends. 
 The user will have the option to restart the game.
 
-// === Progressing through the game == //
+- Progressing through the game 
 
 After a certain amount of continuous gameplay without restarting, the user will have the option to evolve. 
 After evolving, the the game's difficulty will increase. 
@@ -29,7 +29,6 @@ After a certain amount of continous gameplay on the final evolution, the user ha
 
 #### Wireframes
 
-### Landing
 
 Here is the login page
 
@@ -37,4 +36,4 @@ Here is the login page
 
 Here is the main page
 
-![image[](https://i.imgur.com/J5W5q7G.png)
+![image](https://i.imgur.com/J5W5q7G.png)
