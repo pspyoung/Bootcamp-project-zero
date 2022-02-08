@@ -1,1 +1,37 @@
+*{
+background-color: aquamarine;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
+h1 {
+    text-align:center; 
+}
+
+#startGame {
+    background-color: red;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 14px; 
+}
+
+.bear_container{
+    position:absolute;
+    left: 50%; 
+    transform:translate(-50%);
+    bottom: 30px; 
+    margin: 0 auto; 
+    display:flex;
+    justify-content: center;    
+    align-items: flex-end;
+}
+
+img{
+    display: flex;
+    width: 50%;
+    height: 50%; 
+    align-items: center;
+    justify-content: center; 
+    border-radius: 50%; 
+}
