@@ -28,18 +28,21 @@ bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276
 // Hug Button = $(".hug");          // $("#hugTimer");
 
 
+
+
+
 // === Buttons, Timers === //
 
 $('#startGame').on('click', () => {
     // console.log ("It started!");
     time = 1; 
     ageInterval = setInterval(ageTimer, 1000);
-    // eat = 10; 
-    // eatInterval = setInterval(eatTimer, 1000);
-    // sleep = 10;
-    // sleepInterval = setInterval(sleepTimer, 1000);
-    // hug = 10;
-    // hugInterval = setInterval(hugTimer, 1000);
+    eat = 20; 
+    eatInterval = setInterval(eatTimer, 1000);
+    sleep = 20;
+    sleepInterval = setInterval(sleepTimer, 1000);
+    hug = 20;
+    hugInterval = setInterval(hugTimer, 1000);
 });
 
 // === Age Timer
@@ -54,10 +57,16 @@ function ageTimer () {
         $("#species").text("Kid Bear");
         bearOne.remove();
         $(".bear_container").append(bearTwo);
-    } else {
+    } else if (time < 20) {
         $("#species").text("Growed Up Bear");
         bearTwo.remove();
         $(".bear_container").append(bearThree);
+    } else if (time > 21) {
+        alert("Congratlations! We've beared witness to some master survival skills. You win!");
+        stopEatInterval();
+        stopAgeInterval();
+        stopHugInterval();
+        stopSleepInterval();
     }
 }; 
     
@@ -72,6 +81,8 @@ function eatTimer () {
     if (eat===0) {
         stopEatInterval(); 
         stopAgeInterval();
+        stopSleepInterval();
+        stopHugInterval();
         alert("You have died of hunger"); 
     };
 }
@@ -92,6 +103,8 @@ function sleepTimer () {
     $("#sleepTimer").text(`${sleep}`);
     if (sleep===0) {
         stopSleepInterval();
+        stopEatInterval();
+        stopHugInterval();
         stopAgeInterval(); 
         alert("You went into deep hybearnation! Better luck next time!");
     }
@@ -113,6 +126,8 @@ function hugTimer () {
     if (hug ===0) {
         stopHugInterval();
         stopAgeInterval();
+        stopEatInterval();
+        stopSleepInterval();
         alert("You need moar bearhugs. Try again :(")
     }
 };
