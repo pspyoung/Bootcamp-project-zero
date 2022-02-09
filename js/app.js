@@ -28,8 +28,8 @@ bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276
 // Hug Button = $(".hug");          // $("#hugTimer");
 
 
-
-
+// === Form for Name
+let nameBear = prompt("What is your name?");
 
 // === Buttons, Timers === //
 
@@ -50,6 +50,7 @@ $('#startGame').on('click', () => {
 function ageTimer () {
     time ++; 
     $("#ageTimer").text(`${time}`);
+    $("#name").text(nameBear);
     if (time <5) {
         $("#species").text("Baby Bear");
         $(".bear_container").append(bearOne);
