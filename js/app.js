@@ -10,6 +10,16 @@ let sleepInterval;
 let hugInterval;
 let species; 
 
+// Bear Images
+let bearOne = $(`<img id ="cub"/>`);
+bearOne.attr("src", "https://user-images.githubusercontent.com/90462032/153273913-1a062cbd-f12d-4b0c-9e4f-d3e91bfc0ac8.gif");
+
+let bearTwo = $(`<img id ="polar"/>`);
+bearTwo.attr("src", "https://user-images.githubusercontent.com/90462032/153276597-b33ac10a-9db9-4606-bcaf-bfef23ca1098.gif");
+
+let bearThree = $(`<img id ="polar"/>`);
+bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276694-5987b03c-203b-4699-baa2-b765a4aafa9f.gif");
+
 
 // === Names of Things === //
 // Start Button = $("#startGame"); // 
@@ -28,8 +38,8 @@ $('#startGame').on('click', () => {
     // eatInterval = setInterval(eatTimer, 1000);
     // sleep = 10;
     // sleepInterval = setInterval(sleepTimer, 1000);
-    hug = 10;
-    hugInterval = setInterval(hugTimer, 1000);
+    // hug = 10;
+    // hugInterval = setInterval(hugTimer, 1000);
 });
 
 // === Age Timer
@@ -39,10 +49,15 @@ function ageTimer () {
     $("#ageTimer").text(`${time}`);
     if (time <5) {
         $("#species").text("Baby Bear");
+        $(".bear_container").append(bearOne);
     } else if (time < 10) {
         $("#species").text("Kid Bear");
+        bearOne.remove();
+        $(".bear_container").append(bearTwo);
     } else {
         $("#species").text("Growed Up Bear");
+        bearTwo.remove();
+        $(".bear_container").append(bearThree);
     }
 }; 
     
