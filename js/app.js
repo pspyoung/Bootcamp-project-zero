@@ -17,7 +17,7 @@ bearOne.attr("src", "https://user-images.githubusercontent.com/90462032/15327391
 let bearTwo = $(`<img id ="polar"/>`);
 bearTwo.attr("src", "https://user-images.githubusercontent.com/90462032/153276597-b33ac10a-9db9-4606-bcaf-bfef23ca1098.gif");
 
-let bearThree = $(`<img id ="polar"/>`);
+let bearThree = $(`<img id ="panda"/>`);
 bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276694-5987b03c-203b-4699-baa2-b765a4aafa9f.gif");
 
 
@@ -29,11 +29,11 @@ bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276
 
 
 // === Form for Name
-let nameBear = prompt("What is your name?");
+// let nameBear = prompt("What is your name?");
 
 // === Buttons, Timers === //
 
-$('#startGame').on('click', () => {
+$("#startGame").on("click", () => {
     // console.log ("It started!");
     time = 1; 
     ageInterval = setInterval(ageTimer, 1000);
@@ -45,12 +45,28 @@ $('#startGame').on('click', () => {
     hugInterval = setInterval(hugTimer, 1000);
 });
 
+// <h4>Name<input id = "nameBear" type="text"></h4><button class = "nameForm">Ok</button>
+
+// working vanilla javascript targetting #nameBear
+let formText = document.getElementById("nameBear");
+// const $formText = $("#nameBear");
+
+
+$(".nameForm").on("click", () => {
+    $("#name").text(formText.value);
+    
+});
+
+// == Additional functionality to update as typing
+// $("#nameBear").on("keydown", () => {
+//     $("#name").text(formText.value);
+// });
+
 // === Age Timer
 
 function ageTimer () {
     time ++; 
     $("#ageTimer").text(`${time}`);
-    $("#name").text(nameBear);
     if (time <5) {
         $("#species").text("Baby Bear");
         $(".bear_container").append(bearOne);

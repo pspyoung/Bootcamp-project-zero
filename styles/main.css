@@ -9,6 +9,10 @@ h1 {
     text-align:center; 
 }
 
+#nameForm {
+    font-size:10px; 
+}
+
 button {
     font-size:16px;
     border-radius:12px;
