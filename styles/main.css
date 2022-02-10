@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box; 
+}
 body {
     height: 100%;
 }
@@ -7,8 +10,8 @@ input {
 }
 
 .column{
-    margin-left: -10px; 
-    padding: 10px; 
+    margin: 0 px; 
+    padding: 0px; 
     /* border: 2px solid black;  */
 }
 
@@ -23,8 +26,18 @@ i{
     height: 20px;
 }
 
+progress {
+    flex: 0 0 100%;
+}
+
 h3{
     text-align: center; 
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column; 
 }
 
 #startGame {
@@ -32,6 +45,11 @@ h3{
     padding: 10px; 
     border-radius: 50%; 
     border: 2px solid gray; 
+}
+
+.buttons {
+    margin-left: 50px; 
+    margin-bottom: 50px; 
 }
 
 img {
