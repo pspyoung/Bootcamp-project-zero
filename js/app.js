@@ -52,15 +52,16 @@ let formText = document.getElementById("nameBear");
 // const $formText = $("#nameBear");
 
 
-$(".nameForm").on("click", () => {
-    $("#name").text(formText.value);
-    
-});
+// $(".nameForm").on("click", () => {
+//     console.log($formText);
+    // $("#name").text($formText.value);
+//     console.log($("#name").text());
+// });
 
 // == Additional functionality to update as typing
-// $("#nameBear").on("keydown", () => {
-//     $("#name").text(formText.value);
-// });
+$("#nameBear").on("keyup", () => {
+    $("#name").text(formText.value);
+});
 
 // === Age Timer
 
