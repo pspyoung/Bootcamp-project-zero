@@ -8,10 +8,16 @@ input {
 
 .column{
     margin-left: -10px; 
-    margin: 10px; 
     padding: 10px; 
+    /* border: 2px solid black;  */
+}
+
+.left_container,
+.middle_container,
+.right_container{
     border: 2px solid black; 
 }
+
 
 h3{
     text-align: center; 
@@ -22,4 +28,16 @@ h3{
     padding: 10px; 
     border-radius: 50%; 
     border: 2px solid gray; 
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius:20%; 
+}
+
+.gif_column {
+    display: flex;
+    justify-content: flex-center;
+    align-items: flex-start; 
 }
