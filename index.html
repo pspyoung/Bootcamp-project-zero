@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/main.css">
     <!-- Bulma CSS framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Scripts -->
@@ -19,11 +19,17 @@
 </head>
 <body class ="has-background-success-light">
     <header>
+        <div class="column is-full">
         
         <h1 class="is-size-2 has-text-centered has-text-primary-light has-background-warning-dark	">Bears. Beets. Battlestar Galactica</h1>
+    </div>
+    <div class="column is-one-fourth">
         </header>
-        <h4>Name<input type="text" id="nameBear"></h4>
-        <button id="startGame" class="button is-large is-danger is-rounded"></i>Start</button>
+            <div class="column is-one-quarter">
+                <h4>Name<input class="input is-small is-hovered is-info" type="text" id="nameBear"></h4>
+                <button id="startGame" class="button is-large is-danger is-rounded"></i>Start</button>
+            </div>
+    </div>
     
 
 <!-- Above and Beyond -->
@@ -31,62 +37,53 @@
 Hovering! With Restart/Paws/Stats info
 </nav> -->
 
-
-<!-- Icons -->
-<!-- <i class="fa-solid fa-circle-play"></i> -->
-
-
-
-    <div class="main_container">
+<div class = "columns">
+<!-- SECTION  -->
+    <div class="main_container column is-one-quarter"> 
+        <h3>First Column</h3>
         <div class="buttons">
             <ul>
-        <li><button class = "eat button is-warning is-medium is-rounded"><i class="fa-solid fa-utensils"></i></button>
-            <span id="eatTimer">10</span>
-            </li>
-        <li><button class = "sleep button is-info is-medium is-rounded"><i class="fa-solid fa-bed"></i></button>
-            <span id="sleepTimer">10</span></li>
-        </li>
-        <li><button class = "hug button is-danger is-medium is-rounded"><i class="fa-solid fa-heart"></i></button>
-            <span id="hugTimer">10</span></li>
-        </li>
-        <li>
-        <li>
-            <h2 id = "ageTimer">1</h2>
-        </li>
-            <p id = "name">Bear</p>
-            <span id = "species">Type of Bear:</span>
-        </li>
-        </ul>
-        </div>
-        <div class="bear__stats">
-
+                <li><button class = "eat button is-warning is-medium is-rounded"><i class="fa-solid fa-utensils"></i></button>
+                    <span id="eatTimer">10</span>
+                </li>
+                <li><button class = "sleep button is-info is-medium is-rounded"><i class="fa-solid fa-bed"></i></button>
+                    <span id="sleepTimer">10</span></li>
+                </li>
+                <li><button class = "hug button is-danger is-medium is-rounded"><i class="fa-solid fa-heart"></i></button>
+                    <span id="hugTimer">10</span></li>
+                </li>
+                <li>
+                    <p id = "ageTimer">1</h2>
+                </li>
+                <li><p id = "name">Bear</p>
+                    <p id = "species">Type of Bear:</p>
+                </li>
+            </ul>
         </div>
     </div>
+        <!-- SECTION  -->
+    <div class="column is-half"> 
+            <h3>Second Column</h3>
+    </div>
+        <!-- SECTION  -->
+    <div class = "column is-one-quarter">
+            <h3>Third Column</h3>
+    </div>
+</div>
+        
+
     <div class="bear_container">
         <!-- ##### PlaceHolder Image -->
         <!-- <img src="https://cdn.pixabay.com/photo/2017/07/06/14/19/bear-2478148_1280.jpg" alt="bearhug" class="bear_images"> -->
         <!-- <span> Insert Name and Species Here</span> -->
     </div>
     
-    <!-- <img src="https://user-images.githubusercontent.com/90462032/153273913-1a062cbd-f12d-4b0c-9e4f-d3e91bfc0ac8.gif" alt="babyBear" class="polarcub">
-    <img src="https://user-images.githubusercontent.com/90462032/153276597-b33ac10a-9db9-4606-bcaf-bfef23ca1098.gif" alt="barrelRow" class="polaradult">
-    <img src="https://user-images.githubusercontent.com/90462032/153276694-5987b03c-203b-4699-baa2-b765a4aafa9f.gif" alt="sneezingPanda" class="panda"> -->
-    <!-- <footer>Remember to Paws and take a break ⏸</footer> -->
-    
+
 
 <!-- Above and Beyond -->
 <!-- <aside class="notifications">Levelup, changes </aside> -->
 
-<!-- Bear Pics -->
 
-<!-- Baby Bear: -->
-
-<!-- https://user-images.githubusercontent.com/90462032/153273913-1a062cbd-f12d-4b0c-9e4f-d3e91bfc0ac8.gif -->
-<!-- Barrel Row -->
-<!-- https://user-images.githubusercontent.com/90462032/153276597-b33ac10a-9db9-4606-bcaf-bfef23ca1098.gif)
- -->
- <!-- Panda -->
- <!-- https://user-images.githubusercontent.com/90462032/153276694-5987b03c-203b-4699-baa2-b765a4aafa9f.gif -->
 
 </body>
 </html>

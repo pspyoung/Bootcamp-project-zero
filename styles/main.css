@@ -1,5 +1,25 @@
-$desktop-enabled
+body {
+    height: 100%;
+}
 
-${
-    $primary
+input {
+    max-width: 200px;
+}
+
+.column{
+    margin-left: -10px; 
+    margin: 10px; 
+    padding: 10px; 
+    border: 2px solid black; 
+}
+
+h3{
+    text-align: center; 
+}
+
+#startGame {
+    margin: 10px; 
+    padding: 10px; 
+    border-radius: 50%; 
+    border: 2px solid gray; 
 }
