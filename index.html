@@ -17,12 +17,14 @@
     <script src="https://kit.fontawesome.com/dbc8d730ad.js" crossorigin="anonymous"></script>
     <title>I'm Beary Excited!</title>
 </head>
-<body>
+<body class ="has-background-success-light">
     <header>
-        <button id="startGame">Start</button>
-        <h1>Bears. Beets. Battlestar Galactica</h1>
-        <h4>Name<input type="text" id="nameBear"></h4><button class="nameForm">Ok</button>
-    </header>
+        
+        <h1 class="is-size-2 has-text-centered has-text-primary-light has-background-warning-dark	">Bears. Beets. Battlestar Galactica</h1>
+        </header>
+        <h4>Name<input type="text" id="nameBear"></h4>
+        <button id="startGame" class="button is-large is-danger is-rounded"></i>Start</button>
+    
 
 <!-- Above and Beyond -->
 <!-- <nav class="dropdownMenu">
@@ -31,27 +33,27 @@ Hovering! With Restart/Paws/Stats info
 
 
 <!-- Icons -->
-<i class="fa-solid fa-heart"></i>
-<i class="fa-solid fa-utensils"></i>
-<i class="fa-solid fa-bed"></i>
+<!-- <i class="fa-solid fa-circle-play"></i> -->
+
+
 
     <div class="main_container">
         <div class="buttons">
             <ul>
-        <li><button class = "eat">Eat</button>
+        <li><button class = "eat button is-warning is-medium is-rounded"><i class="fa-solid fa-utensils"></i></button>
             <span id="eatTimer">10</span>
             </li>
-        <li><button class = "sleep">Hibernate</button>
+        <li><button class = "sleep button is-info is-medium is-rounded"><i class="fa-solid fa-bed"></i></button>
             <span id="sleepTimer">10</span></li>
         </li>
-        <li><button class = "hug">Hug</button>
+        <li><button class = "hug button is-danger is-medium is-rounded"><i class="fa-solid fa-heart"></i></button>
             <span id="hugTimer">10</span></li>
         </li>
         <li>
         <li>
             <h2 id = "ageTimer">1</h2>
         </li>
-            <p id = "name">Bear, Smokey The</p>
+            <p id = "name">Bear</p>
             <span id = "species">Type of Bear:</span>
         </li>
         </ul>

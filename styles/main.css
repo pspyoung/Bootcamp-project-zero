@@ -1,53 +1,5 @@
-*{
-background-color: aquamarine;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+$desktop-enabled
 
-h1 {
-    text-align:center; 
-}
-
-#nameForm {
-    font-size:10px; 
-}
-
-button {
-    font-size:16px;
-    border-radius:12px;
-    border: 2px solid brown; 
-    color: rebeccapurple;
-    padding:14px 40px; 
-}
-
-button:hover {
-    box-shadow: 2px 2px 7px 1px #9E7C66;
-}
-
-#startGame {
-    background-color: red;
-    border-radius: 50%;
-    padding: 20px;
-    font-size: 14px; 
-}
-
-.bear_container{
-    position:absolute;
-    left: 50%; 
-    transform:translate(-50%);
-    bottom: 30px; 
-    margin: 0 auto; 
-    display:flex;
-    justify-content: center;    
-    align-items: flex-end;
-}
-
-img{
-    display: flex;
-    width: 75%;
-    height: 75%; 
-    align-items: center;
-    justify-content: center; 
-    border-radius: 50%; 
+${
+    $primary
 }
