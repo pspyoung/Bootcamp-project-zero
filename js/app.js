@@ -74,19 +74,23 @@ $("#nameBear").on("keyup", () => {
 function ageTimer () {
     time ++; 
     $("#ageTimer").text(`${time}`);
-    if (time <5) {
+    if (time < 15) {
         $("#species").text("The Baby Bear");
         $(".bear_container").append(bearOne);
-    } else if (time < 10) {
+        $(".notifications").text("Look at this cutie. Don't let any of the bars go empty!");
+    } else if (time < 30) {
         $("#species").text("The Kid Bear");
         bearOne.remove();
         $(".bear_container").append(bearTwo);
-        $(".notifications").text("Kid Bear form");
-    } else if (time < 20) {
+        $(".notifications").text("You've grown up! Look Ma, a Bear-rel row!!");
+    } else if (time < 45) {
         $("#species").text("The Growed Up Bear");
         bearTwo.remove();
         $(".bear_container").append(bearThree);
-    } else if (time > 21) {
+        $(".notifications").text("You've turned into a Bi-Polar! Get it?? Bi..polar..."); 
+    } else if (time < 53) {
+        $(".notifications").text("You're almost there! You can bear it! *click click*") 
+    } else if (time > 60) {
         $(".notifications").text("Congratlations! We've beared witness to some master survival skills. You win!");
         stopEatInterval();
         stopAgeInterval();

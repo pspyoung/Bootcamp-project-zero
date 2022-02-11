@@ -96,15 +96,15 @@ h3{
 }
 
 .buttons {
-    margin-left: 50px; 
+    margin-left: 20px; 
     margin-bottom: 50px; 
+    
 }
 
 .notifications {
     margin: 20px;
     font-size: 40px;
-    font-color: red; 
-    font-weight: bold;  
+    /* font-color: red;  */
 }
 
 img {
