@@ -9,6 +9,12 @@ input {
     max-width: 200px;
 }
 
+.columns{
+    display:flex; 
+    flex-direction: row; 
+    align-items: stretch; 
+}
+
 .column{
     margin: 0 px; 
     padding: 0px; 

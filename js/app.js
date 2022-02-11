@@ -35,6 +35,7 @@ bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276
 
 $("#startGame").on("click", () => {
     // console.log ("It started!");
+    bearThree.remove();
     time = 1; 
     ageInterval = setInterval(ageTimer, 1000);
     eat = 10; 
@@ -97,7 +98,7 @@ function stopAgeInterval() {
 
     // === Eat Timer
 function eatTimer () {
-    console.log(eat + " testing");
+    // console.log(eat + " testing");
     $("#eatProgress").attr("value", eat.toString());
     eat--; 
     $("#eatTimer").text(`${eat}`);
