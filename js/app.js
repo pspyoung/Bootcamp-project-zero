@@ -20,11 +20,14 @@ bearTwo.attr("src", "https://user-images.githubusercontent.com/90462032/15327659
 let bearThree = $(`<img id ="panda"/>`);
 bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276694-5987b03c-203b-4699-baa2-b765a4aafa9f.gif");
 
-let bearZero = $(`<img id="wave"/>`);
-bearZero.attr("src", "https://user-images.githubusercontent.com/90462032/153540623-9af11936-a897-4dd4-888a-6f573d511c5d.gif");
+let bearWin = $(`<img id="wave"/>`);
+bearWin.attr("src", "https://user-images.githubusercontent.com/90462032/153540623-9af11936-a897-4dd4-888a-6f573d511c5d.gif");
 
 let sadPanda =$(`<img id="sad"/>`);
 sadPanda.attr("src", "https://user-images.githubusercontent.com/90462032/153541139-b73dbf93-a1d4-48bd-9aed-4b79eeb9af9f.gif");
+
+let bearZero =$(`<img id=teddy"/>`);
+bearZero.attr("src", "https://user-images.githubusercontent.com/90462032/153544591-243898a8-e8f3-4e5c-af20-d5d41eefc99e.jpeg");
 
 // === Names of Things === //
 // Start Button = $("#startGame"); // 
@@ -45,6 +48,7 @@ $("#startGame").on("click", () => {
     bearThree.remove();
     bearZero.remove();
     sadPanda.remove();
+    bearWin.remove();
     $(".notifications").text("");
     time = 1; 
     ageInterval = setInterval(ageTimer, 1000);
@@ -88,11 +92,13 @@ function ageTimer () {
         bearTwo.remove();
         $(".bear_container").append(bearThree);
     } else if (time > 21) {
-        alert("Congratlations! We've beared witness to some master survival skills. You win!");
+        $(".notifications").text("Congratlations! We've beared witness to some master survival skills. You win!");
         stopEatInterval();
         stopAgeInterval();
         stopHugInterval();
         stopSleepInterval();
+        bearThree.remove();
+        $(".bear_container").append(bearWin);
     }
 }; 
     
@@ -142,7 +148,7 @@ function sleepTimer () {
         stopEatInterval();
         stopHugInterval();
         stopAgeInterval(); 
-        alert("You went into deep hybearnation! Better luck next time!");
+        $(".notifications").text("You went into deep hybearnation! Better luck next time!");
         bearOne.remove();
         bearTwo.remove();
         bearThree.remove();
@@ -169,7 +175,7 @@ function hugTimer () {
         stopAgeInterval();
         stopEatInterval();
         stopSleepInterval();
-        alert("You need moar bearhugs. Try again :(");
+        $(".notifications").text("You need moar bearhugs. Try again :(");
         bearOne.remove();
         bearTwo.remove();
         bearThree.remove();
