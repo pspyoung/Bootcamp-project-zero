@@ -2,38 +2,41 @@
 Bear Tomagotchi
 
 
-Technologies Used: HTML, CSS, JavaScript, jQuery
+Technologies Used: HTML, CSS, JavaScript, jQuery, Bulma
+
+I do not own any of the images. No copyright intended.
 
 
+## User Stories
 
-#### User Stories
+### Initial stages 
 
-- Initial stages 
+As a user, I want to keep my bear alive so I can watch it grow. I want to play until I beat the game!
+The start screen contains instructions:
 
-At the start screen, user enters name and presses start.
-The game contains three main metrics, "health", "equipment durability", and "leveling bar".
-These three metrics are represented by the bars above it, and will automatically decrease. 
-Each time the timer automatically decreases will be referred as "decay".
-The button adjacent to each bar will increase the metric.  
-When either of the three bar reaches zero (empty), the automatically end. 
+-Name your bear.
+-Keep your bear alive by pressing the buttons in the middle of the screen.
+-Your bear will grow and change over time.
+-Stay alive along enough to win!
+-When you're ready, press "Start".
+-Have fun!
+
+The user can name the bear with the form box (optional). The name automatically shows up on the bottom of the screen. 
+The red "Start" button on the top will start and restart the game. 
+The game contains three main metrics, "Hunger", "Sleepiness", and "Loneliness".
+These three metrics are represented by the buttons in the middle of the screen: the "Yellow Utensils" button, the "Blue Bed" button, and the "Red Heart" button. 
+The bars will decrease over time. 
+When either of the three bar reaches zero (empty), the game will end. 
 All progress is lost when the game ends. 
-The user will have the option to restart the game.
+The user will have the option to restart the game and play again.
 
 - Progressing through the game 
 
-After a certain amount of continuous gameplay without restarting, the user will have the option to evolve. 
-After evolving, the the game's difficulty will increase. 
-The timer's decay speed increases. The amount of "work" required to progress to the next evolution stage increases.
-The user will be able to evolve twice.
-After a certain amount of continous gameplay on the final evolution, the user has completed the game.
+After an amount of continuous gameplay without restarting, the bear will "grow up".
+The bear's growth will be indicated on three areas: a new picture on the middle of the screen, the text on the bottom of the screen, and notification text on the right part of the screen. 
+The bear will grow twice. 
+After an amount of continuous gameplay, the user has the game.
 
-#### Wireframes
+## Wireframes
 
-
-Here is the login page
-
-![image](https://i.imgur.com/9qK6DBc.png)
-
-Here is the main page
-
-![image](https://i.imgur.com/J5W5q7G.png)
+![image](https://user-images.githubusercontent.com/90462032/153662689-89991998-ef85-401f-8b30-6c10740b3e60.png)
