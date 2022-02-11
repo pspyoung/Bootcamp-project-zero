@@ -21,6 +21,14 @@ input {
     /* border: 2px solid black;  */
 }
 
+.buttons {
+    height: 600px; 
+}
+.infoHolder{
+    margin: 10px;
+    justify-content: center; 
+}
+
 .left_container,
 .middle_container,
 .right_container{
@@ -73,6 +81,6 @@ img {
 .middle_container {
     display: flex;
     justify-content: center;
-    align-items: flex-end; 
+    align-items: center; 
 }
 

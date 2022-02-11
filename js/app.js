@@ -40,10 +40,10 @@ $("#startGame").on("click", () => {
     ageInterval = setInterval(ageTimer, 1000);
     eat = 10; 
     eatInterval = setInterval(eatTimer, 1000);
-    // sleep = 20;
-    // sleepInterval = setInterval(sleepTimer, 1000);
-    // hug = 20;
-    // hugInterval = setInterval(hugTimer, 1000);
+    sleep = 20;
+    sleepInterval = setInterval(sleepTimer, 1000);
+    hug = 20;
+    hugInterval = setInterval(hugTimer, 1000);
 });
 
 // <h4>Name<input id = "nameBear" type="text"></h4><button class = "nameForm">Ok</button>
@@ -98,10 +98,9 @@ function stopAgeInterval() {
 
     // === Eat Timer
 function eatTimer () {
-    // console.log(eat + " testing");
     $("#eatProgress").attr("value", eat.toString());
     eat--; 
-    $("#eatTimer").text(`${eat}`);
+    // $("#eatTimer").text(`${eat}`);
     if (eat===0) {
         stopEatInterval(); 
         stopAgeInterval();
@@ -123,8 +122,9 @@ function stopEatInterval() {
 
 // === Sleep Timer
 function sleepTimer () {
+    $("#sleepProgress").attr("value", sleep.toString());
     sleep--; 
-    $("#sleepTimer").text(`${sleep}`);
+    // $("#sleepTimer").text(`${sleep}`);
     if (sleep===0) {
         stopSleepInterval();
         stopEatInterval();
@@ -145,8 +145,9 @@ $(".sleep").on("click", () => {
 // === Hug Timer
 
 function hugTimer () {
+    $("#hugProgress").attr("value", hug.toString());
     hug--; 
-    $("#hugTimer").text(`${hug}`);    
+    // $("#hugTimer").text(`${hug}`);    
     if (hug ===0) {
         stopHugInterval();
         stopAgeInterval();

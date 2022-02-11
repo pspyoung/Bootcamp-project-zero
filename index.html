@@ -26,7 +26,7 @@
         <div class="column is-one-fourth">
         </header>
         
-        <div class="column is-one-quarter">
+        <div class="column is-one-quarter infoHolder">
                 <h4>Name<input class="input is-small is-hovered is-info" type="text" id="nameBear"></h4>
                 <button id="startGame" class="button is-large is-danger is-rounded"></i>Start</button>
             </div>
@@ -38,18 +38,21 @@
     <div class="left_container column is-one-quarter is-flex"> 
         <div class="buttons">
             <ul>
-                <section class = "eat_icons">
-                    <li><button class = "eat button is-warning is-medium is-rounded"><i class="fa-solid fa-utensils"></i></button>
+                <li><button class = "eat button is-warning is-medium is-rounded"><i class="fa-solid fa-utensils"></i></button>
+                    
                     <progress id="eatProgress" class="progress is-warning" value="10" min="0" max="10">100%</progress>
-                    <!-- ANCHOR span timer -->
+                    <!-- span timer -->
                     <!-- <span id="eatTimer">10</span> -->
                     </li> 
-                </section>
                 <li><button class = "sleep button is-info is-medium is-rounded"><i class="fa-solid fa-bed"></i></button>
-                    <span id="sleepTimer">10</span></li>
+
+                    <progress id="sleepProgress" class="progress is-info" value="10" min="0" max="10">100%</progress>
+                    <!-- <span id="sleepTimer">10</span></li> -->
                 </li>
                 <li><button class = "hug button is-danger is-medium is-rounded"><i class="fa-solid fa-heart"></i></button>
-                    <span id="hugTimer">10</span></li>
+
+                    <progress id="hugProgress" class="progress is-danger" value="10" min="0" max="10">100%</progress>
+                    <!-- <span id="hugTimer">10</span></li> -->
                 </li>
                 <li>
                     <p id = "ageTimer">1</h2>
@@ -57,6 +60,8 @@
                 <li><p id = "name">Bear</p>
                     <p id = "species">Type of Bear:</p>
                 </li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas quidem autem similique. Hic libero in vel possimus recusandae facilis?</p>
+
             </ul>
         </div>
     </div>
