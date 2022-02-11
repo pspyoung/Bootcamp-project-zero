@@ -37,6 +37,10 @@ footer{
     justify-content: center;
 }
 
+.left_container{
+    padding-top: 25px; 
+}
+
 .middle_container{
     display:flex;
     flex-direction: column; 
@@ -44,8 +48,12 @@ footer{
 
 .progress{
     display:flex; 
-    align-content:flex-bottom; 
-    
+    align-content:flex-bottom;  
+}
+
+.barIndicators{
+    font-size:20px;
+    text-align:center; 
 }
 
 .buttons {
@@ -60,7 +68,7 @@ footer{
 .left_container,
 .middle_container,
 .right_container{
-    border: 2px solid black; 
+    border: 2px dashed rgb(225, 186, 144); 
 }
 
 i{
@@ -77,7 +85,7 @@ h3{
 }
 
 #startGame {
-    margin: 10px; 
+    margin: 10px 10px 10px 20px; 
     padding: 10px; 
     border-radius: 50%; 
     border: 2px solid gray; 
@@ -86,6 +94,13 @@ h3{
 .buttons {
     margin-left: 50px; 
     margin-bottom: 50px; 
+}
+
+.notifications {
+    margin: 20px;
+    font-size: 40px;
+    font-color: red; 
+    font-weight: bold;  
 }
 
 img {
@@ -104,6 +119,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center; 
+    padding: 20px;
 }
 
 #species{

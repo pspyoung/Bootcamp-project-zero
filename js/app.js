@@ -20,6 +20,11 @@ bearTwo.attr("src", "https://user-images.githubusercontent.com/90462032/15327659
 let bearThree = $(`<img id ="panda"/>`);
 bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276694-5987b03c-203b-4699-baa2-b765a4aafa9f.gif");
 
+let bearZero = $(`<img id="wave"/>`);
+bearZero.attr("src", "https://user-images.githubusercontent.com/90462032/153540623-9af11936-a897-4dd4-888a-6f573d511c5d.gif");
+
+let sadPanda =$(`<img id="sad"/>`);
+sadPanda.attr("src", "https://user-images.githubusercontent.com/90462032/153541139-b73dbf93-a1d4-48bd-9aed-4b79eeb9af9f.gif");
 
 // === Names of Things === //
 // Start Button = $("#startGame"); // 
@@ -35,7 +40,12 @@ bearThree.attr("src", "https://user-images.githubusercontent.com/90462032/153276
 
 $("#startGame").on("click", () => {
     // console.log ("It started!");
+    bearOne.remove();
+    bearTwo.remove();
     bearThree.remove();
+    bearZero.remove();
+    sadPanda.remove();
+    $(".notifications").text("");
     time = 1; 
     ageInterval = setInterval(ageTimer, 1000);
     eat = 10; 
@@ -46,13 +56,10 @@ $("#startGame").on("click", () => {
     hugInterval = setInterval(hugTimer, 1000);
 });
 
-// <h4>Name<input id = "nameBear" type="text"></h4><button class = "nameForm">Ok</button>
-
-// working vanilla javascript targetting #nameBear
+$(".bear_container").append(bearZero);
 let formText = document.getElementById("nameBear");
-// const $formText = $("#nameBear");
 
-
+// == Alternative click to name functionality
 // $(".nameForm").on("click", () => {
 //     console.log($formText);
     // $("#name").text($formText.value);
@@ -70,14 +77,14 @@ function ageTimer () {
     time ++; 
     $("#ageTimer").text(`${time}`);
     if (time <5) {
-        $("#species").text("Baby Bear");
+        $("#species").text("The Baby Bear");
         $(".bear_container").append(bearOne);
     } else if (time < 10) {
-        $("#species").text("Kid Bear");
+        $("#species").text("The Kid Bear");
         bearOne.remove();
         $(".bear_container").append(bearTwo);
     } else if (time < 20) {
-        $("#species").text("Growed Up Bear");
+        $("#species").text("The Growed Up Bear");
         bearTwo.remove();
         $(".bear_container").append(bearThree);
     } else if (time > 21) {
@@ -106,7 +113,12 @@ function eatTimer () {
         stopAgeInterval();
         stopSleepInterval();
         stopHugInterval();
-        alert("You could not bear the hunger"); 
+        $(".notifications").text("You could not bear the hunger!");
+        // alert("You could not bear the hunger!");
+        bearOne.remove();
+        bearTwo.remove();
+        bearThree.remove();
+        $(".bear_container").append(sadPanda); 
     };
 }
 
@@ -131,6 +143,10 @@ function sleepTimer () {
         stopHugInterval();
         stopAgeInterval(); 
         alert("You went into deep hybearnation! Better luck next time!");
+        bearOne.remove();
+        bearTwo.remove();
+        bearThree.remove();
+        $(".bear_container").append(sadPanda); 
     }
 };
 
@@ -153,7 +169,11 @@ function hugTimer () {
         stopAgeInterval();
         stopEatInterval();
         stopSleepInterval();
-        alert("You need moar bearhugs. Try again :(")
+        alert("You need moar bearhugs. Try again :(");
+        bearOne.remove();
+        bearTwo.remove();
+        bearThree.remove();
+        $(".bear_container").append(sadPanda); 
     }
 };
 
