@@ -29,20 +29,14 @@ sadPanda.attr("src", "https://user-images.githubusercontent.com/90462032/1535411
 let bearZero =$(`<img id=teddy"/>`);
 bearZero.attr("src", "https://user-images.githubusercontent.com/90462032/153544591-243898a8-e8f3-4e5c-af20-d5d41eefc99e.jpeg");
 
-// === Names of Things === //
-// Start Button = $("#startGame"); // 
-// Eat Button = $(".eat");          // $("#eatTimer");
-// Sleep Button = $(".sleep");      // $("#sleepTimer");
-// Hug Button = $(".hug");          // $("#hugTimer");
+let instructions=$(".instructions");
 
-
-// === Form for Name
-// let nameBear = prompt("What is your name?");
 
 // === Buttons, Timers === //
 
 $("#startGame").on("click", () => {
     // console.log ("It started!");
+    instructions.remove();
     bearOne.remove();
     bearTwo.remove();
     bearThree.remove();
@@ -87,6 +81,7 @@ function ageTimer () {
         $("#species").text("The Kid Bear");
         bearOne.remove();
         $(".bear_container").append(bearTwo);
+        $(".notifications").text("Kid Bear form");
     } else if (time < 20) {
         $("#species").text("The Growed Up Bear");
         bearTwo.remove();
