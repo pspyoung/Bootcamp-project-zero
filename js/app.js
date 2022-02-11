@@ -40,9 +40,9 @@ $("#startGame").on("click", () => {
     ageInterval = setInterval(ageTimer, 1000);
     eat = 10; 
     eatInterval = setInterval(eatTimer, 1000);
-    sleep = 20;
+    sleep = 10;
     sleepInterval = setInterval(sleepTimer, 1000);
-    hug = 20;
+    hug = 10;
     hugInterval = setInterval(hugTimer, 1000);
 });
 
@@ -61,7 +61,7 @@ let formText = document.getElementById("nameBear");
 
 // == Additional functionality to update as typing
 $("#nameBear").on("keyup", () => {
-    $("#name").text(formText.value);
+    $("#name").text(formText.value + ", ");
 });
 
 // === Age Timer

@@ -23,55 +23,48 @@
         <div class="column is-fullheight">
             <h1 class="is-size-2 has-text-centered has-text-primary-light has-background-warning-dark">Bears. Beets. Battlestar Galactica</h1>
         </div>
-        <div class="column is-one-fourth">
-        </header>
         
-        <div class="column is-one-quarter infoHolder">
-                <h4>Name<input class="input is-small is-hovered is-info" type="text" id="nameBear"></h4>
+
+        
+        <div class="nameForm column is-one-fifth">
+                <h4>Name:</h4>
+                <input class="input is-small is-hovered is-info" type="text" id="nameBear">
                 <button id="startGame" class="button is-large is-danger is-rounded"></i>Start</button>
-            </div>
-    </div>
-    
-
-<div class = "columns is-centered">
-
-    <div class="left_container column is-one-quarter is-flex"> 
-        <div class="buttons">
-            <ul>
-                <li><button class = "eat button is-warning is-medium is-rounded"><i class="fa-solid fa-utensils"></i></button>
-                    
-                    <progress id="eatProgress" class="progress is-warning" value="10" min="0" max="10">100%</progress>
-                    <!-- span timer -->
-                    <!-- <span id="eatTimer">10</span> -->
-                    </li> 
-                <li><button class = "sleep button is-info is-medium is-rounded"><i class="fa-solid fa-bed"></i></button>
-
-                    <progress id="sleepProgress" class="progress is-info" value="10" min="0" max="10">100%</progress>
-                    <!-- <span id="sleepTimer">10</span></li> -->
-                </li>
-                <li><button class = "hug button is-danger is-medium is-rounded"><i class="fa-solid fa-heart"></i></button>
-
-                    <progress id="hugProgress" class="progress is-danger" value="10" min="0" max="10">100%</progress>
-                    <!-- <span id="hugTimer">10</span></li> -->
-                </li>
-                <li>
-                    <p id = "ageTimer">1</h2>
-                </li>
-                <li><p id = "name">Bear</p>
-                    <p id = "species">Type of Bear:</p>
-                </li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas quidem autem similique. Hic libero in vel possimus recusandae facilis?</p>
-
-            </ul>
         </div>
+        
+    </header>
+<!-- Timers -->
+<!-- <span id="eatTimer">10</span> -->
+<!-- <span id="sleepTimer">10</span> -->
+<!-- <span id="hugTimer">10</span></li> -->
+<div class = "columns">
+<!-- ### Column One -->
+    <div class="left_container column is-one-quarter"> 
+            
+                <progress id="eatProgress" class="progress is-warning" value="10" min="0" max="10">100%</progress><br>
+
+                <progress id="sleepProgress" class="progress is-info" value="10" min="0" max="10">100%</progress><br>
+                
+                <progress id="hugProgress" class="progress is-danger" value="10" min="0" max="10">100%</progress><br>
+                
+            
+<!-- Bear Name and Species Displays -->
+                <!-- <p id = "name">Bear</p>
+                <p id = "species">Type of Bear:</p> -->
+                
     </div>
-        <!-- SECTION  -->
+<!-- ### Column Two  -->
     <div class="middle_container column is-half is-flex"> 
         <div class="column gif_column">
             <span class="bear_container"></span>
         </div>
+        <span class="buttons">
+            <button class = "eat button is-warning is-medium is-rounded"><i class="fa-solid fa-utensils"></i>    
+            <button class = "sleep button is-info is-medium is-rounded"><i class="fa-solid fa-bed"></i></button>
+            <button class = "hug button is-danger is-medium is-rounded"><i class="fa-solid fa-heart"></i></button>
+        </span>
     </div>
-        <!-- SECTION  -->
+<!-- ### Column Three -->
     <div class = "right_container column is-one-quarter is-flex">
     </div>
 </div>
@@ -84,7 +77,8 @@
 <!-- Above and Beyond -->
 <!-- <aside class="notifications">Levelup, changes </aside> -->
 
-<footer class="foot">Hello There </footer>
+<footer class="foot"><h1 id = "name" class="title">Bear, </h1><br>
+    <h1 id = "species" class="title">Baby Bear</h1></footer>
 
 </body>
 </html>

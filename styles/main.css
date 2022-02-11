@@ -1,29 +1,57 @@
 *{
     box-sizing: border-box; 
-}
+} */
+
 body {
     height: 100%;
-}
+} 
 
 input {
-    max-width: 200px;
+    margin-left: 20px; 
+    width: 200px;
+
+}
+
+h4{
+    margin-left: 20px; 
+}
+
+.nameForm {
+    margin-left: 10px; 
 }
 
 .columns{
-    display:flex; 
-    flex-direction: row; 
-    align-items: stretch; 
+    display:flex;
+    height: auto;
+    padding: 20px; 
 }
 
 .column{
     margin: 0 px; 
-    padding: 0px; 
-    /* border: 2px solid black;  */
+    padding: 0px;
+    justify-content: center;
+}
+
+footer{
+    display:flex; 
+    justify-content: center;
+}
+
+.middle_container{
+    display:flex;
+    flex-direction: column; 
+}
+
+.progress{
+    display:flex; 
+    align-content:flex-bottom; 
+    
 }
 
 .buttons {
-    height: 600px; 
+    align-items: flex-end; 
 }
+
 .infoHolder{
     margin: 10px;
     justify-content: center; 
@@ -46,12 +74,6 @@ progress {
 
 h3{
     text-align: center; 
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap; 
-    flex-direction: column; 
 }
 
 #startGame {
@@ -84,3 +106,6 @@ img {
     align-items: center; 
 }
 
+#species{
+    padding-left: 5px; 
+}
