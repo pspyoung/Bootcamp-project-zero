@@ -91,7 +91,7 @@ function ageTimer () {
     } else if (time < 53) {
         $(".notifications").text("You're almost there! You can bear it! *click click*") 
     } else if (time > 60) {
-        $(".notifications").text("Congratlations! We've beared witness to some master survival skills. You win!");
+        $(".notifications").text("Congratulations! We've beared witness to some master survival skills. You win!");
         stopEatInterval();
         stopAgeInterval();
         stopHugInterval();
